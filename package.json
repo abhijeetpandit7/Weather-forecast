@@ -16,7 +16,7 @@
   "author": "Abhijeet Pandit",
   "license": "ISC",
 	"engines": {
-    "node": "12.18.3"
+    "node": "12.18.0"
   },
   "bugs": {
     "url": "https://github.com/abhijeetpandit7/Weather-forecast/issues"
