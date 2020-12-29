@@ -1,0 +1,51 @@
+
+body {
+  background-color: #DEE2E6;
+}
+
+.centered {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F8F9FA;
+  background-color: #343A40;
+}
+
+.case1 {
+  background-color: #F8F9FA;
+}
+
+.case2 {
+  background-color: #edf2f4;
+}
+
+.bolder-text {
+  font-weight:700;
+  font-size: 3rem;
+  color: #495057;
+}
+
+.bold-text {
+  font-weight:500;
+  color: #495057;
+}
+
+.light-text {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  /* width: 100px; */
+  margin: 10px;
+  text-align: center;
+}
