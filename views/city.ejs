@@ -1,0 +1,50 @@
+<%- include('partial/header') %>
+
+    <div class="container">
+        <p class="heading-text"><%= cityName %>, <%= countryName %></p>
+        <div class="flex-container container case1">
+            <div class="mb-0">
+                <p class="lead bolder-text pt-3"><%= temperature.temperature %><%= temperature.unit %></p>
+            </div>
+            <div class="mb-0">
+                <img src=<%= imageUrl %> >     
+            </div>
+        </div>
+        <div class="flex-container container case1 pr-4">
+                <p class="lead bold-text">Feels like <%= temperature.temperatureFeelsLike %><%= temperature.unit %>. <%= weather %></p>
+        </div>
+        <br>
+        <div class="case2 container mb-5">
+            <div class="d-flex flex-row mb-3 justify-content-center">
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 lead"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="p-2 lead"><i class="fas fa-wind"></i></div>
+                    <div class="p-2 lead"><i class="far fa-compass"></i></div>
+                    <div class="p-2 lead"><i class="fas fa-tint"></i></div>
+                    <div class="p-2 lead"><i class="far fa-eye"></i></div>
+                    <div class="p-2 lead"><i class="far fa-arrow-alt-circle-up"></i></div>
+                    <div class="p-2 lead"><i class="far fa-arrow-alt-circle-down"></i></div>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 lead"><%= pressure %> hPa</div>
+                    <div class="p-2 lead"><%= wind.windSpeed %> m/s</div>
+                    <div class="p-2 lead"><%= wind.windDirection %></div>
+                    <div class="p-2 lead"><%= humidity %>%</div>
+                    <div class="p-2 lead"><%= visibility %> km</div>
+                    <div class="p-2 lead"><%= time.sunrise %> am</div>
+                    <div class="p-2 lead"><%= time.sunset %> pm</div>
+                </div>
+                <div class="d-flex flex-column mb-3 light-text">
+                    <div class="p-2 lead">Pressure</div>
+                    <div class="p-2 lead">Wind speed</div>
+                    <div class="p-2 lead">Wind direction</div>
+                    <div class="p-2 lead">Humidity</div>
+                    <div class="p-2 lead">Visibility</div>
+                    <div class="p-2 lead">Sunrise</div>
+                    <div class="p-2 lead">Sunset</div>
+                  </div>
+            </div>
+        </div>
+  </div>
+
+<%- include('partial/footer') %>

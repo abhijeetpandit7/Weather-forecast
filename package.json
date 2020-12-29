@@ -1,0 +1,32 @@
+{
+  "name": "weather-forecast",
+  "version": "1.0.0",
+  "description": "Get forecasted weather of your city",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijeetpandit7/Weather-forecast.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Abhijeet Pandit",
+  "license": "ISC",
+	"engines": {
+    "node": "12.18.0"
+  },
+  "bugs": {
+    "url": "https://github.com/abhijeetpandit7/Weather-forecast/issues"
+  },
+  "homepage": "https://github.com/abhijeetpandit7/Weather-forecast#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "degrees-to-direction": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
