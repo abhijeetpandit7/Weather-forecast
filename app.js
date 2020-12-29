@@ -19,7 +19,7 @@ app.post("/",function(req,res){
     var unit = req.body.unit
     var tempUnit = (unit=="Celsius (°C)") ? "metric" : (unit=="Kelvin (K)") ? "standard" : "imperial"
     unit = (unit=="Celsius (°C)") ? "°C" : (unit=="Kelvin (K)") ? "K" : "°F"
-    var api = process.env.API_KEY;
+    var api = "e5d5a9ea382468b8becca045e7c37d4d";
     var url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+api+"&units="+tempUnit;
     https.get(url,function(response){
       response.on("data",function(data){
