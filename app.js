@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express')
 const bodyParser = require('body-parser')
 const ejs = require('ejs')
@@ -80,7 +79,9 @@ app.listen(process.env.PORT || 3000, function(){
 function calculateTime(time){
     let unix_timestamp = time
     var date = new Date(unix_timestamp * 1000);
-    var hours = date.getHours()-6;
+    date.setHours(date.getHours()+5)
+    date.setMinutes(date.getMinutes()+30)
+    var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
     var seconds = "0" + date.getSeconds();
     var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
