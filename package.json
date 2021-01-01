@@ -15,7 +15,7 @@
   ],
   "author": "Abhijeet Pandit",
   "license": "ISC",
-	"engines": {
+  "engines": {
     "node": "12.18.0"
   },
   "bugs": {
